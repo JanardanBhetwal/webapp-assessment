@@ -27,7 +27,7 @@ Isolated internal network; target version pinned via Docker image tag.
 
 | ID | Title | OWASP Category | CWE | CVSS | Severity |
 |---|---|---|---|---|---|
-| F-001 | IDOR on basket retrieval — any user can read another user's basket by changing an ID in the URL | A01 Broken Access Control | CWE-639 | 7.5 | High |
+| F-001 | IDOR on basket retrieval — any user can read another user's basket by changing an ID in the URL | A01 Broken Access Control | CWE-639 | 6.5 | Medium |
 | F-002 | SQL Injection in login → full authentication bypass as any account, including admin | A03 Injection | CWE-89 | 9.8 | Critical |
 | F-003 | DOM-based XSS in product search — unsanitized input executed client-side | A03 Injection | CWE-79 | 6.1 | Medium |
 | F-004 | Password hash embedded in JWT payload, exposed to anyone holding the token | A02 Cryptographic Failures | CWE-200 | 5.3 | Medium |

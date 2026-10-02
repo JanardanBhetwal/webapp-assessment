@@ -2,7 +2,7 @@
 
 **OWASP Category:** A01:2021 - Broken Access Control
 **CWE:** CWE-639 (Authorization Bypass Through User-Controlled Key)
-**CVSS v3.1:** 7.5 (High) — AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N
+**CVSS v3.1:** 6.5 (Medium) — AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N
 **Endpoint:** `GET /rest/basket/{id}`
 
 ## Description
